@@ -1,0 +1,35 @@
+* {
+    background-color: #C2FFC7;
+}
+h1 {
+    background-color: #9EDF9C;
+    color: #62825D;
+    text-align: center;
+}
+h2 {
+    color: #003366;
+}
+p {
+    color: #526E48;
+}
+ul {
+    list-style-image: url('./assets/images/right.png');
+}
+li {
+    color: #62825D;
+}
+ul#info {
+    list-style-type: none;
+    text-align: center;
+}
+ul#info li {
+    color: #62825D;
+    display: inline-block;
+    text-align: center;
+    margin-right: 2em;
+    margin-bottom: 1em;
+}
+a {
+    text-decoration: none;
+    color: #526E48;
+}
