@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {background-color: darkgray;}
+            li {color: blue;}
+            .first-class {color: red;}
+            li[draggable] {color: purple;}
+            #first-id {color: orange;}
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li id="first-id" class="first-class" draggable="true">Element</li>
+        </ul>
+        <div id="position">
+            <p>Position:</p>
+            <code>
+                li {
+                    color: red;
+                    color: blue;
+                }
+            </code>
+        </div> <hr>
+        <div id="specificity">
+            <p>Specificity:</p>
+            <code>
+                * {background-color: darkgray;} (5) <br>
+                li {color: blue;} (4) <br>
+                .first-class {color: red;} (3) <br>
+                li[draggable] {color: purple;} (2) <br>
+                #first-id {color: orange;} (1)
+            </code>
+        </div> <hr>
+        <div id="type">
+            <p>Type:</p>
+            <code>
+                External (3) <br>
+                Internal (2) <br>
+                Inline (1)
+            </code>
+        </div> <hr>
+        <div id="importance">
+            <p>Importance</p>
+            <code>
+                color: red; (2) <br>
+                color: green !important; (1)
+            </code>
+        </div>
+    </body>
+</html>
