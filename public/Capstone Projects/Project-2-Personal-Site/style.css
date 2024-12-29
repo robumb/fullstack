@@ -5,6 +5,12 @@ html {
 .content {
     margin-top: 50px;
 }
+
+#profile {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
  #scroll-top {
     position: fixed;
     bottom: 20px;
