@@ -4,6 +4,8 @@ html {
 
 body {
     background-image: url(./assets/images/el-bck-3.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -17,6 +19,12 @@ body {
 
 #profile {
     border-radius: 50%;
+    overflow: hidden;
+}
+
+#carouselExample {
+    height: 400px;
+    width: auto;
     overflow: hidden;
 }
 
