@@ -28,6 +28,11 @@ body {
     overflow: hidden;
 }
 
+.card-body-scroll {
+    height: 200px;
+    overflow-y: auto;
+}
+
  #scroll-top {
     position: fixed;
     bottom: 20px;
