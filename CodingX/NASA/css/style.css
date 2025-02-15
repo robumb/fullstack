@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("../images/nasabg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+h2 {
+  color: yellow;
+  letter-spacing: 1.5px;
+}
+p span {
+  color: red;
+  font-style: oblique;
+}
+.container {
+  box-sizing: border-box;
+  background-color: salmon;
+  width: 350px;
+  border: 5px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.container1 {
+  background-color: salmon;
+  width: 350px;
+  border: 5px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+}
