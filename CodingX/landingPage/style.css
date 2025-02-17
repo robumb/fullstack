@@ -75,3 +75,17 @@ nav {
   font-style: italic;
   color: yellow;
 }
+.container button {
+  font-size: 18px;
+  margin-right: 15px;
+  padding: 8px 15px;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+.container .button-one {
+  background-color: #3498db;
+}
+.container .button-two {
+  background-color: #e74c3c;
+}
