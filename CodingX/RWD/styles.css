@@ -1,0 +1,24 @@
+/* In CSS we use media queries to apply different styles for different screen sizes. */
+/* @media media-type and (media-feature-rule) {
+    CSS rules go here 
+}*/
+@media only screen and (max-width: breakpoint) {
+    body {
+        background-color: lightblue;
+    }
+}
+/* Common media queries */
+/* Extra small devices (phones, 480px and down) */
+/* Small devices (tablets, 768px and down) */
+/* Medium devices (desktops, 992px and down) */
+/* Large devices (large desktops, 1280px and down) */
+/* Extra large devices (large desktops, 1280px and up) */
+
+/* Overview of Breakpoints */
+/* Desktop:
+@media screen and (min-width: 1024px) {...} */
+/* Tablet:
+@media screen and (min-width: 768px) and (max-width: 1023px) {...} */
+/* Mobile:
+@media screen and (max-width: 767px) {...}
+                  (max-width: 1023px) {...} */
