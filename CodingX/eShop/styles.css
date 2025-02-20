@@ -1,3 +1,6 @@
+/* Add the import statement at the top of the CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 /* ========== RESET STYLES ========== */
 
 /* Remove default margin, padding, and set box-sizing */
@@ -14,9 +17,6 @@ html {
 
 /* ========== REST OF STYLES ========== */
 
-/* Add the import statement at the top of the CSS file */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 /* Set the body font family */
 body {
     font-family: 'Poppins', sans-serif;
@@ -24,7 +24,7 @@ body {
 }
 
 /* styling the background */
-.header {
+header {
     background: radial-gradient(#fff, #5ba3eb);
     margin: auto;
     padding-left: 25px;
