@@ -96,3 +96,38 @@ nav ul li a {
     border-radius: 15px;
     cursor: pointer;
 }
+
+/* Style the categories section */
+.categories {
+    margin: 70px 0;
+    text-align: center;
+}
+.categories h2 {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 35px;
+    border-bottom: 2px solid #ff523b;
+}
+/* styling the category cards and add them to a row */
+.categories .row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.categories .row img {
+    height: 250px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+.categories .row p {
+    font-size: 18px;
+}
+.categories .row p span {
+    background-color: #74b9ff;
+    padding: 5px;
+    font-size: 16px;
+}
