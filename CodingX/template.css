@@ -1,0 +1,15 @@
+/* ========== RESET STYLES ========== */
+
+/* Remove default margin, padding, and set box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ========== REST OF STYLES ========== */
