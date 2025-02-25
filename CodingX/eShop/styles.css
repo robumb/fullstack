@@ -149,8 +149,8 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 75px;
     flex-wrap: wrap;
+    margin: 0 75px;
     text-align: left;
     margin-top: 15px;
 }
