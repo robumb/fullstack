@@ -1,131 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>My Resume</title>
         <meta name="description" content="This is a personal resume website">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
+        <!-- Add Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     </head>
-    <body>
-        <h1>Robert Adrian Umbres</h1>
-        <hr />
-        <ul id="info">
-            <li>
-                <img src="./assets/images/placeholder.png" alt="map location">
-                <a href="https://maps.app.goo.gl/9HaLoav3PDBufWAK7">Floresti, PH, Romania</a>
-            </li>
-            <li>
-                <img src="./assets/images/phone-call.png" alt="telephone">
-                <a href="tel:+40750424885">0750424885</a>
-            </li>
-            <li>
-                <img src="./assets/images/mail.png" alt="mail">
-                <a href="mailto:umbres.r@gmail.com">umbres.r@gmail.com</a>
-            </li>
-            <li>
-                <img src="./assets/images/linkedin.png" alt="linkedin">
-                <a href="https://www.linkedin.com/in/umbres-robert/">umbres-robert</a>
-            </li>
-        </ul>
-        <h2>Professional Objective</h2>
-        <p>Electrician and technology enthusiast with over 9 years of experience in electrical
-            installations and extensive skills in programming, self-hosted servers, and modern
-            technologies. By combining knowledge in the electrical field with IT expertise, I aim to
-            contribute to complex projects and implement innovative solutions that optimize processes
-            and resources.</p> 
-        <hr />
-        <h2>Professional Experience</h2>
-        <p><b>Electrician</b>
-        <br>
-        <i>Caverion, Norway — 2018 - 2024</i></p>
-        <ul>
-            <li>Installation, maintenance, and repair of electrical systems in compliance with safety
-                standards.</li>
-            <li>Diagnosing and solving complex electrical problems.</li>
-            <li>Collaborating with engineers and other teams to ensure timely project delivery.</li>
-            <li>Monitoring and controlling the quality of the executed work.</li>
-            <li>Training and guiding apprentices and new staff.</li>
-        </ul>
-        <p><b>Apprentice Electrician</b>
-            <br>
-        <i>Ovesen Elektriske, Norway— 2015 - 2018</i></p>
-        <ul>
-            <li>Assisting the lead electrician with residential and industrial projects.</li>
-            <li>Learning and implementing strict safety standards.</li>
-            <li>Contributing to the preparation of technical documentation for electrical work.</li>
-            <li>Acquiring basic knowledge in diagnosing and installing electrical equipment.</li>
-        </ul>
-        <hr>
-        <h2>Education and Courses</h2>
-        <p>
-            <b>Electrician Diploma</b> <br>
-            <i>Bodø VGS (Vocational High School), Norway — 2013 - 2015</i> <br>
-            <i>Apprenticeship, Norway — 2015 - 2018</i>
-        </p>
-        <p>
-            <b>CYBER501x: Cybersecurity Fundamentals</b> <br>
-            <i>Part of a Bachelor's Program, edX (2023)</i>
-        </p>
-        <ul>
-            <li>Fundamentals of cybersecurity, including cryptography, network security, and
-                identifying vulnerabilities.</li>
-        </ul>
-        <p>
-            <b>Fullstack Development Course</b> <br>
-            <i>Udemy Course (2024)</i>
-        </p>
-        <ul>
-            <li>Full development of web applications using front-end technologies (HTML, CSS,
-                JavaScript) and back-end technologies (Node.js, Express.js).</li>
-            <li>Database integration (PostgreSQL) and using RESTful APIs.</li>
-        </ul>
-        <hr>
-        <h2>Certifications</h2>
-        <ul>
-            <li>Authorized Electrician Certificate</li>
-            <li>Low Voltage Electrical System Installation Certificate</li>
-            <li>Occupational Safety Certificate (Electrical Safety Training)</li>
-            <li>Training in the use of electrical equipment (measuring tools, protective equipment)</li>
-        </ul>
-        <hr>
-        <h2>Technical Skills</h2>
-        <p><b>Electricity:</b></p>
-        <ul>
-            <li>Installation and maintenance of low-voltage electrical systems.</li>
-            <li>Diagnosing and solving electrical problems.</li>
-            <li>Adhering to safety standards and regulations.</li>
-        </ul>
-        <p><b>IT and Technology:</b></p>
-        <ul>
-            <li><b>Programming languages:</b> HTML, CSS, JavaScript, Node, React, PostgreSQL, Web3 and DApps.</li>
-            <li><b>Self-Hosted Servers:</b> Creation and maintenance of servers for various
-                applications.</li>
-            <li><b>Docker:</b> Managing and implementing container-based solutions.</li>
-            <li><b>Microsoft Office Pack:</b> Basic knowledge (Word, Excel, PowerPoint).</li>
-            <li><b>3D Programs:</b> Using Sketch-Up for technical projects and simulations.</li>
-        </ul>
-        <hr>
-        <h2>Technological Achievements</h2>
-        <ul>
-            <li>Configuring and managing self-hosted servers for data storage and web
-                applications.</li>
-            <li>Developing a simple web application using full-stack development knowledge.</li>
-            <li>Creating an energy consumption monitoring system using open-source
-                technologies.</li>
-            <li>Optimizing electrical projects through 3D simulations in Sketch-Up.</li>
-        </ul>
-        <hr>
-        <h2>Languages</h2>
-        <ul>
-            <li><b>Romanian:</b> Native</li>
-            <li><b>English:</b> B2</li>
-            <li><b>Norwegian</b> B2</li>
-        </ul>
+    <body class="bg-light text-dark">
+        <div class="container my-5">
+            <!-- Header Section -->
+            <header class="text-center mb-5">
+                <h1 class="display-4 fw-bold">Robert Adrian Umbres</h1>
+                <p class="text-muted">Electrician & Technology Enthusiast</p>
+                <hr class="my-4">
+            </header>
 
-        <footer class="footer">
-            <p>Robert Adrian Umbres - 2024</p>
-        </footer>
+            <!-- Contact Info Section -->
+            <section id="info" class="mb-5">
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <i class="fas fa-map-marker-alt fa-2x text-primary mb-2"></i>
+                        <p><a href="https://maps.app.goo.gl/9HaLoav3PDBufWAK7" class="text-decoration-none">Floresti, PH, Romania</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fas fa-phone fa-2x text-primary mb-2"></i>
+                        <p><a href="tel:+40750424885" class="text-decoration-none">0750424885</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fas fa-envelope fa-2x text-primary mb-2"></i>
+                        <p><a href="mailto:umbres.r@gmail.com" class="text-decoration-none">umbres.r@gmail.com</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fab fa-linkedin fa-2x text-primary mb-2"></i>
+                        <p><a href="https://www.linkedin.com/in/umbres-robert/" class="text-decoration-none">LinkedIn</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Professional Objective Section -->
+            <section class="mb-5">
+                <h2 class="fw-bold">Professional Objective</h2>
+                <p class="lead">Electrician and technology enthusiast with over 9 years of experience in electrical installations and extensive skills in programming, self-hosted servers, and modern technologies. By combining knowledge in the electrical field with IT expertise, I aim to contribute to complex projects and implement innovative solutions that optimize processes and resources.</p>
+            </section>
+
+            <!-- Professional Experience Section -->
+            <section class="mb-5">
+                <h2 class="fw-bold">Professional Experience</h2>
+                <div class="mb-4">
+                    <h5><b>Electrician</b></h5>
+                    <p><i>Caverion, Norway — 2018 - 2024</i></p>
+                    <ul>
+                        <li>Installation, maintenance, and repair of electrical systems in compliance with safety standards.</li>
+                        <li>Diagnosing and solving complex electrical problems.</li>
+                        <li>Collaborating with engineers and other teams to ensure timely project delivery.</li>
+                        <li>Monitoring and controlling the quality of the executed work.</li>
+                        <li>Training and guiding apprentices and new staff.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5><b>Apprentice Electrician</b></h5>
+                    <p><i>Ovesen Elektriske, Norway — 2015 - 2018</i></p>
+                    <ul>
+                        <li>Assisting the lead electrician with residential and industrial projects.</li>
+                        <li>Learning and implementing strict safety standards.</li>
+                        <li>Contributing to the preparation of technical documentation for electrical work.</li>
+                        <li>Acquiring basic knowledge in diagnosing and installing electrical equipment.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Education and Courses Section -->
+            <section class="mb-5">
+                <h2 class="fw-bold">Education and Courses</h2>
+                <div class="mb-3">
+                    <h5><b>Electrician Diploma</b></h5>
+                    <p><i>Bodø VGS (Vocational High School), Norway — 2013 - 2015</i></p>
+                    <p><i>Apprenticeship, Norway — 2015 - 2018</i></p>
+                </div>
+                <div class="mb-3">
+                    <h5><b>CYBER501x: Cybersecurity Fundamentals</b></h5>
+                    <p><i>Part of a Bachelor's Program, edX (2023)</i></p>
+                    <ul>
+                        <li>Fundamentals of cybersecurity, including cryptography, network security, and identifying vulnerabilities.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5><b>Fullstack Development Course</b></h5>
+                    <p><i>Udemy Course (2024)</i></p>
+                    <ul>
+                        <li>Full development of web applications using front-end technologies (HTML, CSS, JavaScript) and back-end technologies (Node.js, Express.js).</li>
+                        <li>Database integration (PostgreSQL) and using RESTful APIs.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Certifications Section -->
+            <section class="mb-5">
+                <h2 class="fw-bold">Certifications</h2>
+                <ul>
+                    <li>Authorized Electrician Certificate</li>
+                    <li>Low Voltage Electrical System Installation Certificate</li>
+                    <li>Occupational Safety Certificate (Electrical Safety Training)</li>
+                    <li>Training in the use of electrical equipment (measuring tools, protective equipment)</li>
+                </ul>
+            </section>
+
+            <!-- Technical Skills Section -->
+            <section class="mb-5">
+                <h2 class="fw-bold">Technical Skills</h2>
+                <p><b>Electricity:</b></p>
+                <ul>
+                    <li>Installation and maintenance of low-voltage electrical systems.</li>
+                    <li>Diagnosing and solving electrical problems.</li>
+                    <li>Adhering to safety standards and regulations.</li>
+                </ul>
+                <p><b>IT and Technology:</b></p>
+                <ul>
+                    <li><b>Programming languages:</b> HTML, CSS, JavaScript, Node, React, PostgreSQL, Web3 and DApps.</li>
+                    <li><b>Self-Hosted Servers:</b> Creation and maintenance of servers for various applications.</li>
+                    <li><b>Docker:</b> Managing and implementing container-based solutions.</li>
+                    <li><b>Microsoft Office Pack:</b> Basic knowledge (Word, Excel, PowerPoint).</li>
+                    <li><b>3D Programs:</b> Using Sketch-Up for technical projects and simulations.</li>
+                </ul>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer text-center py-3 bg-dark text-white">
+                <p>Robert Adrian Umbres - 2024</p>
+            </footer>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

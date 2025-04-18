@@ -1,41 +1,171 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Soft light gray background */
+    color: #333333; /* Dark gray text for readability */
+}
+
 * {
     background-color: #C2FFC7;
 }
-h1 {
-    background-color: #9EDF9C;
-    color: #62825D;
+
+h1, h2 {
     text-align: center;
+    color: #2c3e50; /* Professional dark blue-gray */
+    margin-bottom: 20px;
 }
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
 h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px solid #3498db; /* Subtle blue underline */
+    display: inline-block;
+    padding-bottom: 5px;
+    animation: slideIn 1s ease-in-out;
     color: #003366;
 }
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes hoverGlow {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+}
+
 p {
     color: #526E48;
 }
+
 ul {
     list-style-image: url('./assets/images/right.png');
 }
+
 li {
     color: #62825D;
 }
-ul#info {
-    list-style-type: none;
-    text-align: center;
+
+/* Contact Info Section */
+#info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
 }
-ul#info li {
-    color: #62825D;
-    display: inline-block;
+
+#info .col-md-3 {
+    margin: 10px 20px;
     text-align: center;
-    margin-right: 2em;
-    margin-bottom: 1em;
+    animation: fadeIn 1.5s ease-in-out;
 }
+
+#info img {
+    width: 40px; /* Reduced size for icons */
+    height: 40px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+    filter: grayscale(100%); /* Makes icons grayscale for a cleaner look */
+}
+
+#info img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0); /* Adds color back on hover */
+}
+
+#info i {
+    color: #3498db; /* Professional blue */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#info i:hover {
+    transform: scale(1.2);
+    color: #1d6fa5; /* Darker blue on hover */
+}
+
+#info a {
+    text-decoration: none;
+    color: #3498db; /* Professional blue */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+#info a:hover {
+    color: #1d6fa5; /* Darker blue on hover */
+}
+
 a {
     text-decoration: none;
     color: #526E48;
+    transition: all 0.3s ease-in-out;
 }
 
 a:hover {
     color: #003366;
+    animation: hoverGlow 1s infinite;
+}
+
+/* Section Styling */
+section {
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff; /* White background for sections */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #2c3e50; /* Dark footer */
+    color: #ffffff;
+    font-size: 0.9rem;
+    animation: fadeIn 2s ease-in-out;
 }
 
 footer > p {
@@ -45,4 +175,13 @@ footer > p {
     background-color: black;
     text-align: center;
     padding: 1em;
+}
+
+/* Buttons and Links */
+button, a {
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover, a:hover {
+    text-decoration: underline;
 }
