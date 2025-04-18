@@ -1,0 +1,31 @@
+json
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens",
+    "christian-kohler.path-intellisense",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "rbbit.typescript-hero",
+    "christian-kohler.npm-intellisense",
+    "leizongmin.node-module-intellisense",
+    "msjsdiag.debugger-for-chrome",
+    "ms-vscode.js-debug-nightly",
+    "dsznajder.es7-react-js-snippets",
+    "xabikos.ReactSnippets",
+    "bradlc.vscode-tailwindcss",
+    "orta.vscode-jest",
+    "ms-playwright.playwright",
+    "humao.rest-client",
+    "rangav.vscode-thunder-client",
+    "alefragnani.project-manager",
+    "pkief.material-icon-theme",
+    "equinusocio.vsc-material-theme",
+    "johnpapa.vscode-peacock",
+    "sonarsource.sonarlint-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "coenraads.bracket-pair-colorizer-2",
+    "albert.TabOut"
+  ]
+}
