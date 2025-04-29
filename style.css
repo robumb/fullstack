@@ -17,7 +17,6 @@ body {
 
 /* Container */
 body {
-    max-width: 800px;
     margin: 20px auto;
     background: #fff;
     padding: 20px;
@@ -57,10 +56,41 @@ hr {
     margin-bottom: 20px;
 }
 
-#info li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+/* Mobile styles (phones) - up to 767px */
+@media screen and (max-width: 767px) {
+    #info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #info li {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Tablet styles - 768px to 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #info {
+        justify-content: center;
+    }
+
+    #info li {
+        width: calc(50% - 20px); /* 2 items per row with gap consideration */
+        justify-content: flex-start;
+    }
+}
+
+/* Desktop styles - 1024px and above */
+@media screen and (min-width: 1024px) {
+    #info {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #info li {
+        flex: 0 1 auto;
+    }
 }
 
 #info img {
@@ -110,4 +140,39 @@ ul li {
     margin-top: 20px;
     font-size: 0.9rem;
     color: #777;
+}
+
+/* Content Box Styling */
+.content-box {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.content-box:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Modify existing body styles
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+*/
+/* Remove the existing body container styles */
+/* Remove or comment out the second body selector that had max-width */
+
+/* Update HR styling */
+hr {
+    width: 80%;
+    margin: 10px auto;
 }
