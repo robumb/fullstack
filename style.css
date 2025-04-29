@@ -17,10 +17,14 @@ body {
 
 /* Container */
 body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
     margin: 20px auto;
-    background: #fff;
     padding: 20px;
-    border-radius: 8px;
+    min-height: 100vh;
+    border-radius: 8px 8px 0 0; /* Remove bottom radius for footer */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -42,8 +46,9 @@ header .subtitle {
 hr {
     border: 0;
     height: 1px;
+    width: 80%;
     background: #ddd;
-    margin: 20px 0;
+    margin: 10px auto;
 }
 
 /* Info Section */
@@ -100,7 +105,7 @@ hr {
 
 #info a {
     text-decoration: none;
-    color: #3498db;
+    color: #2c3e50;
     font-weight: bold;
 }
 
@@ -137,9 +142,23 @@ ul li {
 /* Footer */
 .footer {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-left: -20px;  /* Compensate for body padding */
+    margin-right: -20px;
+    margin-bottom: -40px;
+    padding: 20px;
     font-size: 0.9rem;
-    color: #777;
+    color: #f4f4f4;
+    background-color: #2c3e50;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    margin: 0;
+    text-align: center;
 }
 
 /* Content Box Styling */
@@ -155,24 +174,4 @@ ul li {
 
 .content-box:hover {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Modify existing body styles
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 20px;
-    min-height: 100vh;
-}
-*/
-/* Remove the existing body container styles */
-/* Remove or comment out the second body selector that had max-width */
-
-/* Update HR styling */
-hr {
-    width: 80%;
-    margin: 10px auto;
 }
